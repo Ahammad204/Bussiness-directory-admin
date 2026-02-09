@@ -1,0 +1,42 @@
+{
+  "name": "bussiness-directory-admin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.35.0",
+    "@strapi/plugin-users-permissions": "5.35.0",
+    "@strapi/strapi": "5.35.0",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "strapi-plugin-imagekit": "^1.0.2",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=24.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "c54b1b36-2bfe-4b24-b8cf-e2f1f840f603",
+    "installId": "5b28b22e9c7437eef7fe2505237ba723b0fcfdd5f0d693022252ce3a8fdd0cbc"
+  }
+}
