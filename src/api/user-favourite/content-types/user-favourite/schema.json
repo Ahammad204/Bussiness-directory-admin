@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_favourites",
+  "info": {
+    "singularName": "user-favourite",
+    "pluralName": "user-favourites",
+    "displayName": "UserFavourite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userEmail": {
+      "type": "email"
+    },
+    "businessId": {
+      "type": "integer"
+    }
+  }
+}

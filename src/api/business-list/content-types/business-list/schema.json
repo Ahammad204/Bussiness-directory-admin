@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_lists",
+  "info": {
+    "singularName": "business-list",
+    "pluralName": "business-lists",
+    "displayName": "BusinessList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "premium": {
+      "type": "boolean"
+    },
+    "createdby": {
+      "type": "email"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "business_lists"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}
