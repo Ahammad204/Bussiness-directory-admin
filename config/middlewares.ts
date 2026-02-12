@@ -41,7 +41,8 @@ export default [
       origin: [
         'http://localhost:8081',
         'http://localhost:19006',
-        'https://businessdirectorys.netlify.app'
+        'https://businessdirectorys.netlify.app',
+        'https://bussiness-directory-one.vercel.app'
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: '*',
