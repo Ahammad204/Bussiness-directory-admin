@@ -35,7 +35,19 @@ export default [
       },
     },
   },
-  'strapi::cors',
+ {
+    name: 'strapi::cors',
+    config: {
+      origin: [
+        'http://localhost:8081',
+        'http://localhost:19006',
+        'https://businessdirectorys.netlify.app'
+      ],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+      headers: '*',
+      credentials: true
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
